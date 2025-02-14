@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DariC Trader</title>
+    <link rel="stylesheet" href="der.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="dariclogo.jpg" alt="" class="logo"> 
+        </div>
+        <h1 class="page-title">Daric Trader</h1>
+        <button id="optionsButton" onclick="toggleOptions()">☰</button>
+    </header>
+
+    <div class="container">
+        <h1 style="color: red;">Unleash Traders' Potential On Daric Trader</h1>
+        <p style="color: red;">
+            Embark on a titanic installation in the Forex market with our supplied Forex courier. 
+            Explore the fundamentals of Forex trading, including currency pairs, market analysis, and risk management. 
+            Gain the knowledge and confidence to execute trades effectively.
+        </p>
+        <button class="button-small" onclick="check()">Unlock Your Success Today</button>
+    </div>
+
+    <!-- Options Menu -->
+    <div id="optionsMenu" class="options-menu">
+        <ul>
+            <li><a href="tradershub.html">Traders Hub</a></li>
+            <li><a href="analysistool.html">Analysis Tool</a></li>
+            <li><a href="bots.html">Bots</a></li>
+            <li><a href="#">Classes</a></li> 
+            <li><a href="https://www.babypips.com/" target="_blank">FreeFXCourse</a></li> 
+        </ul>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="hidden">
+        <h2 style="color: #08dc13;">About Us</h2>
+        <p style="color: white;">
+            Welcome to Daric Trader, your ultimate partner in navigating the financial markets. 
+            We are dedicated to empowering traders with the knowledge, tools, and strategies needed 
+            to achieve success in Forex, commodities, and derivatives trading.
+        </p>
+        <p style="color:white;">
+            At Daric Trader, we believe trading is a skill that can be mastered with the right guidance, 
+            education, and technology. Whether you are a beginner learning the fundamentals or an 
+            experienced trader seeking advanced strategies, our platform is built to enhance your journey.
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="hidden">
+        <h2 style="color: green;">Services We Offer</h2>
+        <p style="color: white;">We provide cutting-edge tools and resources to help traders succeed. Our services include:</p>
+        
+        <ul style="text-align: left; padding-left: 20px; color: white;">
+            <li><strong>Trading Bots:</strong> Automate your trades with AI-powered bots for better efficiency.</li>
+            <li><strong>Market Analysis Tools:</strong> Get real-time data, indicators, and insights to make informed decisions.</li>
+            <li><strong>Forex & Derivatives Trading Classes:</strong> Learn from expert traders and master the market.</li>
+            <li><strong>Traders Hub:</strong> Join a community of traders, exchange ideas, and stay updated.</li>
+            <li><strong>Personalized Trading Consultation:</strong> One-on-one expert guidance tailored to your trading goals.</li>
+        </ul>
+
+        <p style="color: white;">
+            At Daric Trader, we believe that knowledge, strategy, and automation are the key ingredients to trading success.
+            Our services are designed to give you an edge in the market and help you trade smarter, not harder.
+        </p>
+        <p style="color: white;"><strong>Ready to take your trading to the next level? Join Daric Trader today! 🚀</strong></p>
+    </section>
+
+    <!-- Help Section -->
+    <section id="help" class="hidden">
+        <h2 style="color: #1bc80b;">Help & Support</h2>
+        <p>Need assistance? Contact us at <strong>support@darictrader.com</strong></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="hidden">
+        <h2 style="color: green;">Contact Us</h2>
+        <p>Email: <strong>support@darictrader.com</strong></p>
+        <p>Phone: <strong>+123 456 7890</strong></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#" onclick="showSection('about')">About Us</a></li>
+            <li><a href="#" onclick="showSection('services')">Services</a></li>
+            <li><a href="#" onclick="showSection('help')">Help</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+            <li><a href="#" onclick="closeSections()">Home</a></li> <!-- New Home button -->
+        </ul>
+        <p>© DariC 2025</p>
+    </footer>
+
+    <script src="der.js"></script>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections first
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        function closeSections() {
+            // Hide all sections when Home is clicked
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+        }
+    </script>
+
+</body>
+</html>
